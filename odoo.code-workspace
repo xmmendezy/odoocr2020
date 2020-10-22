@@ -1,0 +1,19 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+    ],
+    "settings": {
+        "python.pythonPath": "./.venv",
+        "python.linting.pylintEnabled": true,
+        "python.linting.enabled": true,
+        "python.formatting.provider": "autopep8",
+        "python.linting.pylintArgs": [
+            "--load-plugins=pylint_django"
+        ],
+        "python.formatting.autopep8Args": [
+            "--max-line-length=250"
+        ]
+    }
+}
