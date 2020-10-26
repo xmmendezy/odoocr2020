@@ -20,7 +20,7 @@ ports:
     - 8069:8069
 ```
 
-En caso de hacer cambios en los directorios **etc** o **addons**, debe ejecutar:
+En caso de hacer cambios en los directorios **etc** o **addons**, recuerde darle los permisos adecuados y luego debe ejecutar:
 
 ```shell
 docker-compose up --build -V main

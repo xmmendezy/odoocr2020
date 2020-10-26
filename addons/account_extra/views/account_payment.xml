@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_invoice_custom" model="ir.ui.view">
+        <field name="name">account.invoice.custom</field>
+        <field name="model">account.move</field>
+		<field name="inherit_id" ref="account.view_move_form"/>
+        <field name = "arch" type = "xml" >
+            <xpath position="after" expr="//button[@name = 'action_post']">
+                <button class="oe_highlight" name="send_to_gti" type="object" string="Enviar factura GTI" attrs="{'invisible': ['|', '|', ('state', '!=', 'posted'), ('invoice_payment_state', '=', 'not_paid'), ('type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))]}" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -4,8 +4,8 @@ services:
     main:
         container_name: odoo_main
         build:
-            context: .
-            target: odoobase
+              context: .
+              target: odoobase
         depends_on:
             - db
         ports:
@@ -13,8 +13,7 @@ services:
         tty: true
         command: -- --dev=reload
         volumes:
-            - ./addons:/mnt/addons
-            - ./etc:/etc/odoo
+            - maindata:/usr/src
         restart: always
         networks:
             - webnet
@@ -33,3 +32,4 @@ networks:
     webnet:
 volumes:
     pgdata:
+    maindata:

@@ -1,0 +1,17 @@
+FROM odoo:13 As odoobase
+
+WORKDIR /etc/odoo
+
+COPY ./etc/odoo.conf  odoo.conf
+
+WORKDIR /mnt
+
+COPY addons addons
+
+USER root
+
+RUN apt-get update && apt-get install libxml2
+
+RUN pip3 install python-stdnum
+
+USER odoo
