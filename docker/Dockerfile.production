@@ -1,4 +1,4 @@
-FROM odoo:13 As odoobase
+FROM odoo:14 As odoobase
 
 WORKDIR /etc/odoo
 

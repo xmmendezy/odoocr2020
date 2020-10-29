@@ -10,14 +10,9 @@
         'base',
         'account',
     ],
-    'external_dependencies': {
-        'python': [
-            'stdnum',
-            'xmltodict',
-        ]
-    },
     'data': [
-        'views/account_payment.xml',
+        'views/account_move.xml',
+        'views/account_tax.xml',
         'security/ir.model.access.csv',
     ],
     'demo': [],

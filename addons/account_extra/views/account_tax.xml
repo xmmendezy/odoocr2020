@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_tax_gti" model="ir.ui.view">
+        <field name="name">account.tax.gti</field>
+        <field name="model">account.tax</field>
+        <field name="inherit_id" ref="account.view_tax_form"/>
+        <field name = "arch" type = "xml" >
+            <xpath position="after" expr="//field[@name = 'active']">
+                <field string="Código de impuesto" name="CodigoImp"/>
+                <field string="Código de tarifa" name="CodigoTarifa"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
