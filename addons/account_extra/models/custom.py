@@ -18,3 +18,9 @@ class TaxGTI(models.Model):
 
     CodigoImp = fields.Integer(default=1)
     CodigoTarifa = fields.Integer(default=1)
+
+class ResCurrencyGTI(models.Model):
+
+    _inherit = 'res.currency'
+
+    CodigoMoneda = fields.Integer(default=0)

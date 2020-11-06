@@ -13,6 +13,7 @@
     'data': [
         'views/account_move.xml',
         'views/account_tax.xml',
+		'views/account_res_currency.xml',
         'security/ir.model.access.csv',
     ],
     'demo': [],

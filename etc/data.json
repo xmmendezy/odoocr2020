@@ -1,6 +1,16 @@
 {
-	"username": "ivila@grupo-jgf.com",
+	"master_password": "rusa-dggt-bpyg",
+	"username": "185800030134",
 	"password": "CtaGTI*2017",
 	"num_account": 5002,
-	"url_base": "http://pruebas.gticr.com/AplicacionFEPruebas/ApiCargaFactura/api/Documentos/CargarDocumento"
+	"url_base": "http://pruebas.gticr.com/AplicacionFEPruebas/ApiCargaFactura/api/Documentos/CargarDocumento",
+	"data_doc": {
+		"DefaultMoneda": 1,
+		"Sucursal": 1,
+		"Terminal": 1
+	},
+	"tipos_de_cambio": {
+		"1": 1,
+		"2": 615.24
+	}
 }

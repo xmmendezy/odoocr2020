@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_currency_gti" model="ir.ui.view">
+        <field name="name">account.res.currency.gti</field>
+        <field name="model">res.currency</field>
+        <field name="inherit_id" ref="base.view_currency_form"/>
+        <field name="arch" type="xml">
+			<xpath position="after" expr="//field[@name = 'currency_subunit_label']">
+                <field string="Código de Moneda" name="CodigoMoneda"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
