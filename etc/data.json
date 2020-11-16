@@ -7,5 +7,9 @@
 	"data_doc": {
 		"Sucursal": 1,
 		"Terminal": 1
-	}
+	},
+	"EconomicActivity": [
+		["851201", "Servicios varios"],
+		["851202", "Servicios de transporte"]
+	]
 }

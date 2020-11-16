@@ -25,6 +25,8 @@ services:
             - POSTGRES_USER=odoo
             - POSTGRES_DB=postgres
         restart: always
+        ports:
+            - 8070:5432
         volumes:
             - pgdata:/var/lib/postgresql/data
         networks:

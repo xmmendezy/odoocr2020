@@ -16,27 +16,34 @@ def send_to_gti(invoice, TipoDoc: int = 1, reason: str = ''):
     with open('/etc/odoo/data.json', 'r') as data_file:
         data = load(data_file)
         data_doc = data['data_doc']
-    data_header = {
-        'TipoDoc': TipoDoc,
-        'SituacionEnvio': 1,  # Consultar, pendiente
-        'CantDeci': 2,
-        'Sucursal': data_doc['Sucursal'],
-        'CodigoActividad': 851201,  # Pendiente
-        'Terminal': data_doc['Terminal'],
-        'Moneda': invoice.currency_id.CodigoMoneda,
-        'TipoCambio': invoice.currency_id.rate,
-        'CondicionVenta': 1,
-        'Receptor': {
-            'Nombre': invoice.partner_id.name,
-            'TipoIdent': 1,
-            'Identificacion': invoice.partner_id.vat if invoice.partner_id.vat else '',
-            'NombComercial': invoice.partner_id.parent_id.name,
-            'AreaTelefono': (lambda x: int(x[1:x.find(')')]))(invoice.partner_id.phone),
-            'NumTelefono': (lambda x: int(x[x.find(')') + 1:].replace('-', '')))(invoice.partner_id.phone),
-            'Destinatario': invoice.partner_id.name,
-            'CodInterno': invoice.partner_id.ref if invoice.partner_id.ref else invoice.partner_id.vat,
+    try:
+        EconomicActivity = int(invoice.EconomicActivity)
+    except Exception:
+        raise ValidationError('Sin actividad economica seleccionada')
+    try:
+        data_header = {
+            'TipoDoc': TipoDoc,
+            'SituacionEnvio': 1,  # Consultar, pendiente
+            'CantDeci': 2,
+            'Sucursal': data_doc['Sucursal'],
+            'CodigoActividad': EconomicActivity,
+            'Terminal': data_doc['Terminal'],
+            'Moneda': invoice.currency_id.CodigoMoneda,
+            'TipoCambio': invoice.currency_id.rate,
+            'CondicionVenta': 1,
+            'Receptor': {
+                'Nombre': invoice.partner_id.name,
+                'TipoIdent': 1,
+                'Identificacion': invoice.partner_id.vat if invoice.partner_id.vat else '',
+                'NombComercial': invoice.partner_id.parent_id.name,
+                'AreaTelefono': (lambda x: int(x[1:x.find(')')]))(invoice.partner_id.phone),
+                'NumTelefono': (lambda x: int(x[x.find(')') + 1:].replace('-', '')))(invoice.partner_id.phone),
+                'Destinatario': invoice.partner_id.name,
+                'CodInterno': invoice.partner_id.ref if invoice.partner_id.ref else invoice.partner_id.vat,
+            }
         }
-    }
+    except Exception:
+        raise ValidationError('Formulario incompleto')
     if TipoDoc in [1, 3]:
         data_header['MedioPago'] = [1]
     else:
