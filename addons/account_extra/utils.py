@@ -3,36 +3,28 @@
 from datetime import datetime
 from decimal import Decimal, ROUND_HALF_UP
 from logging import getLogger
-from json import load, dumps
+from json import load, loads, dumps
 from requests import post
+from odoo.exceptions import ValidationError
 
 logger = getLogger(__name__)
 
 
-def send_to_gti(invoice, TipoDoc: str = 1):
+def send_to_gti(invoice, TipoDoc: int = 1, reason: str = ''):
     data = {}
     data_doc = {}
     with open('/etc/odoo/data.json', 'r') as data_file:
         data = load(data_file)
         data_doc = data['data_doc']
-
-    def tipo_de_cambio(i):
-        return data['tipos_de_cambio'][str(i)]
-
-    url = f'{data["url_base"]}?pUsuario={data["username"]}&pClave={data["password"]}&pNumCuenta={data["num_account"]}'
-    moneda = invoice.currency_id.CodigoMoneda if invoice.currency_id.CodigoMoneda else data_doc['DefaultMoneda']
     data_header = {
         'TipoDoc': TipoDoc,
         'SituacionEnvio': 1,  # Consultar, pendiente
-        'CantDeci': 1,  # Consultar, pendiente
+        'CantDeci': 2,
         'Sucursal': data_doc['Sucursal'],
         'CodigoActividad': 851201,  # Pendiente
         'Terminal': data_doc['Terminal'],
-        'Moneda': moneda,
-        'TipoCambio': tipo_de_cambio(moneda),
-        'MedioPago': [
-            2
-        ],  # Consultar, pendiente
+        'Moneda': invoice.currency_id.CodigoMoneda,
+        'TipoCambio': invoice.currency_id.rate,
         'CondicionVenta': 1,
         'Receptor': {
             'Nombre': invoice.partner_id.name,
@@ -45,6 +37,10 @@ def send_to_gti(invoice, TipoDoc: str = 1):
             'CodInterno': invoice.partner_id.ref if invoice.partner_id.ref else invoice.partner_id.vat,
         }
     }
+    if TipoDoc in [1, 3]:
+        data_header['MedioPago'] = [1]
+    else:
+        data_header['MedioPago'] = []
     data_lineas = []
     discount_neto = Decimal('0.00')
     TotalServGravado = Decimal('0.00')
@@ -61,6 +57,7 @@ def send_to_gti(invoice, TipoDoc: str = 1):
             'UnidadMedida': 1,  # Revisar
             'Descripcion': invoice_line.product_id.name,
             'PrecioUnitario': invoice_line.price_unit,
+            'BaseImponible': float(value_f),
             'Impuestos': []
         }
         if value_i - value_f > 0:
@@ -72,6 +69,7 @@ def send_to_gti(invoice, TipoDoc: str = 1):
                 }
             ]
         is_exento = True
+        MontoImpuesto = Decimal('0.00')
         for tax in invoice_line.tax_ids:
             if tax.amount > 0:
                 amount = Decimal(tax.amount/100)
@@ -80,13 +78,15 @@ def send_to_gti(invoice, TipoDoc: str = 1):
             if is_exento:
                 is_exento = amount == Decimal('0.00')
             mont_imp = value_f * amount
-            TotalImpuesto += mont_imp
+            MontoImpuesto += mont_imp
             data_invoice_line['Impuestos'].append({
                 'CodigoImp': tax.CodigoImp,
                 'CodigoTarifa': tax.CodigoTarifa,
+                'PorcentajeImp': float(tax.amount),
                 'MontoImp': float(mont_imp)
             })
             # Analizar exoneracion
+        TotalImpuesto += MontoImpuesto
         if invoice_line.product_id.type == 'consu':
             if is_exento:
                 TotalMercaExenta += value_i
@@ -101,15 +101,15 @@ def send_to_gti(invoice, TipoDoc: str = 1):
     data_total = {
         'TotalServGravado': float(TotalServGravado),
         'TotalServExento': float(TotalServExento),
-        'TotalServExonerado': 0,
+        'TotalServExonerado': 0.0,
         'TotalMercaGravada': float(TotalMercaGravada),
         'TotalMercaExenta': float(TotalMercaExenta),
-        'TotalMercaExonerada': 0,
+        'TotalMercaExonerada': 0.0,
         'TotalGravado': float(TotalServGravado + TotalMercaGravada),
         'TotalExento': float(TotalServExento + TotalMercaExenta),
-        'TotalExonerado': 0,
-        'TotalIVADevuelto': 0,
-        'TotalOtrosCargos': 0,
+        'TotalExonerado': 0.0,
+        'TotalIVADevuelto': 0.0,
+        'TotalOtrosCargos': 0.0,
         'TotalVenta': float(Decimal(invoice.amount_untaxed) - discount_neto),
         'TotalDescuento': float(discount_neto),
         'TotalVentaNeta': invoice.amount_untaxed,
@@ -126,7 +126,21 @@ def send_to_gti(invoice, TipoDoc: str = 1):
             },
         ]
     }
-    print(dumps(payload, indent=4))
-    r = post(url, dumps(payload), headers={'content-type': 'application/json'}, auth=(data['username'], data['password']))
+    if TipoDoc == 3:
+        payload['Documentos'][0]['Referencia'] = {
+            'TipoDocRef': 1,
+            'NumeroRef': invoice.NumeroRef,
+            'FechaRef': invoice.FechaRef,
+            'AccionRef': 1,
+            'RazonNota': reason
+        }
+    r = post(f'{data["url_base"]}?pUsuario={data["username"]}&pClave={data["password"]}&pNumCuenta={data["num_account"]}', dumps(payload), headers={'content-type': 'application/json'}, auth=(data['username'], data['password']))
+    response = loads(r.text)
     print(r.text)
     logger.info(f'Response Messages: {r.text}')
+    if response['Respuestas'][0]['Codigo'] == 0:
+        if TipoDoc == 1:
+            invoice.NumeroRef = response['Respuestas'][0]['ClaveNumerica']
+            invoice.FechaRef = response['Fecha']
+    else:
+        raise ValidationError(response['Respuestas'][0]['Detalle'])

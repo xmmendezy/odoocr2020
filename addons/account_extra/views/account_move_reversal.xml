@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_reversal_gti" model="ir.ui.view">
+        <field name="name">account.reversal.gti</field>
+        <field name="model">account.move.reversal</field>
+        <field name="inherit_id" ref="account.view_account_move_reversal"/>
+        <field name = "arch" type = "xml" >
+            <xpath position="replace" expr="//button[@name = 'reverse_moves']">
+                <button string="Reverse" name="reverse_moves" type="object" class="btn-primary"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

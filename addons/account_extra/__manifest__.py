@@ -11,6 +11,7 @@
         'account',
     ],
     'data': [
+        'views/account_move_reversal.xml',
         'views/account_move.xml',
         'views/account_tax.xml',
 		'views/account_res_currency.xml',
