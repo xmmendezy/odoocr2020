@@ -41,5 +41,5 @@ docker system prune
 
 - [x] Proyecto inicial
 - [x] Campos extras (Actividad economica, impuestos, Cabys, NIF)
-- [] POS - UI
-- [] Exoneración
+- [ ] POS - UI
+- [ ] Exoneración
