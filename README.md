@@ -32,13 +32,14 @@ En caso de quedar sin espacio virtual para las imagenes de los contenedores:
 docker system prune
 ```
 
-# Agregar app en servidor de odoo
+## Agregar app en servidor de odoo
 
-1- Copiar archivo etc/data.json a /etc/odoo/data.json
-2- Copiar directorio addons/account_extra al directorio de addons de su distribución
+- Copiar archivo etc/data.json a /etc/odoo/data.json y dar los permisos de usuario y grupo de odoo
+- Copiar directorio addons/account_extra al directorio de addons de su distribusión y dar los permisos de usuario y grupo de odoo
 
-# Estado del proyecto
+## Estado del proyecto
 
-- Proyecto inicial
-- Campos extras (Actividad economica, impuestos, Cabys, NIF)
-- Exoneración
+- [x] Proyecto inicial
+- [x] Campos extras (Actividad económica, impuestos, Cabys, NIF)
+- [ ] POS - UI
+- [ ] Exoneración
