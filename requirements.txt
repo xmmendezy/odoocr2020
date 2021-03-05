@@ -1,0 +1,6 @@
+wheel
+xmlsig
+cryptography==3.2
+pyOpenSSL
+phonenumbers
+jsonschema

@@ -7,6 +7,8 @@ authors = ["Xavier Méndez <xmmendezy@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = "^2.24.0"
+xmlsig = "^0.1.3"
+pyOpenSSL = "^20.0.1"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.5.3"

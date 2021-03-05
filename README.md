@@ -43,3 +43,7 @@ docker system prune
 - [x] Campos extras (Actividad económica, impuestos, Cabys, NIF)
 - [ ] POS - UI
 - [ ] Exoneración
+
+# l10n_cr
+
+## Instalación
