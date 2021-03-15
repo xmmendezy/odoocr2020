@@ -9,6 +9,6 @@ class UoM(models.Model):
 
 class UoMCategory(models.Model):
     _inherit = "uom.category"
-    measure_type = fields.Selection(selection_add=[('area', 'Area'),
-                                                   ('services', 'Services'),
-                                                   ('rent', 'Rent')])
+    measure_type = fields.Selection([('area', 'Area'),
+                                     ('services', 'Services'),
+                                     ('rent', 'Rent')], default='area', required=True)
