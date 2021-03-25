@@ -34,15 +34,15 @@ docker system prune
 
 ## Agregar app en servidor de odoo
 
-- Copiar archivo etc/data.json a /etc/odoo/data.json y dar los permisos de usuario y grupo de odoo
-- Copiar directorio addons/account_extra al directorio de addons de su distribusión y dar los permisos de usuario y grupo de odoo
+-   Copiar archivo etc/data.json a /etc/odoo/data.json y dar los permisos de usuario y grupo de odoo
+-   Copiar directorio addons/account_extra al directorio de addons de su distribusión y dar los permisos de usuario y grupo de odoo
 
 ## Estado del proyecto
 
-- [x] Proyecto inicial
-- [x] Campos extras (Actividad económica, impuestos, Cabys, NIF)
-- [ ] POS - UI
-- [ ] Exoneración
+-   [x] Proyecto inicial
+-   [x] Campos extras (Actividad económica, impuestos, Cabys, NIF)
+-   [ ] POS - UI
+-   [ ] Exoneración
 
 # l10n_cr
 
