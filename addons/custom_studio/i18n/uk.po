@@ -1,0 +1,4424 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_studio
+#
+# Translators:
+# ТАрас <tratatuta@i.ua>, 2020
+# Martin Trigaux, 2020
+# Bohdan Lisnenko, 2020
+# Alina Lisnenko <alinasemeniuk1@gmail.com>, 2020
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~13.5+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-01 07:38+0000\n"
+"PO-Revision-Date: 2020-09-07 08:25+0000\n"
+"Last-Translator: Alina Lisnenko <alinasemeniuk1@gmail.com>, 2020\n"
+"Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid ""
+"\n"
+"                <p class=\"o_view_nocontent_smiling_face\">\n"
+"                    This is your new action.\n"
+"                </p>\n"
+"                <p>By default, it contains a list and a form view and possibly\n"
+"                    other view types depending on the options you chose for your model.\n"
+"                </p>\n"
+"                <p>\n"
+"                    You can start customizing these screens by clicking on the Studio icon on the\n"
+"                    top right corner (you can also customize this help message there).\n"
+"                </p>\n"
+"            "
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid ""
+" <p class=\"o_view_nocontent_empty_report\">\n"
+"                Add a new report\n"
+"            </p>\n"
+"            "
+msgstr ""
+" <p class=\"o_view_nocontent_empty_report\">\n"
+"                Додати новий звіт\n"
+"            </p>\n"
+"            "
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid ""
+" <p class=\"o_view_nocontent_smiling_face\">\n"
+"                Add a new automated action\n"
+"            </p>\n"
+"            "
+msgstr ""
+" <p class=\"o_view_nocontent_smiling_face\">\n"
+"                Додати нову автоматизовану дію\n"
+"            </p>\n"
+"            "
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid ""
+" <p class=\"o_view_nocontent_smiling_face\">\n"
+"                Add a new filter\n"
+"            </p>\n"
+"            "
+msgstr ""
+" <p class=\"o_view_nocontent_smiling_face\">\n"
+"                Додати новий фільтр\n"
+"            </p>\n"
+"            "
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid " to "
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/report.py:0
+#, python-format
+msgid "%s Report"
+msgstr "%s Звіт"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "(id)"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "(t-if=\""
+msgstr "(t-if=\""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid ""
+"<div><p>The <strong>%s</strong> property is only applied to records matching"
+" this filter.</p></div>"
+msgstr ""
+"<div><p> <strong>%s</strong> Властивість застосовується лише до записів, що "
+"відповідають цьому фільтру.</p></div>"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid ""
+"<div><p>The approval rule is only applied to records matching the following "
+"condition:</p></div>"
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid ""
+"<p class=\"o_view_nocontent_smiling_face\">\n"
+"                Add a new access control list\n"
+"            </p>\n"
+"            "
+msgstr ""
+"<p class=\"o_view_nocontent_smiling_face\">\n"
+"                Додати новий список контролю доступу\n"
+"            </p>\n"
+"            "
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/map_view_dialog.js:0
+#, python-format
+msgid ""
+"A contact field is required to use the Map view.\r\n"
+"Create a many2one field to the Contacts model before activating it."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "A field with the same name already exists."
+msgstr "Поле з такою назвою вже існує."
+
+#. module: custom_studio
+#: model:ir.model.constraint,message:custom_studio.constraint_studio_approval_entry_uniq_combination
+msgid "A rule can only be approved/rejected once per record."
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.constraint,message:custom_studio.constraint_studio_approval_rule_method_or_action_together
+msgid "A rule must apply to an action or a method (but not both)."
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.constraint,message:custom_studio.constraint_studio_approval_rule_method_or_action_not_null
+msgid "A rule must apply to an action or a method."
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model__abstract
+msgid "Abstract"
+msgstr "Виписка"
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "Access Control Lists"
+msgstr "Списки контролю доступу"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Access Controls"
+msgstr "Контроль доступу"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_res_groups
+msgid "Access Groups"
+msgstr "Групи доступу"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__action_id
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__action_id
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_search_view
+msgid "Action"
+msgstr "Дія"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_actions_act_window
+msgid "Action Window"
+msgstr "Вікно дії"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_actions_act_window_view
+msgid "Action Window View"
+msgstr "Перегляд вікна дії"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Action to approve:"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor_sidebar.xml:0
+#, python-format
+msgid "Action's title"
+msgstr "Назва дій"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/map_view_dialog.js:0
+#: code:addons/custom_studio/static/src/js/views/new_view_dialog.js:0
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "Activate View"
+msgstr "Активувати перегляд"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__active
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_search_view
+#, python-format
+msgid "Active"
+msgstr "Активно"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Activity View"
+msgstr "Перегляд дії"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/action_editor_action.js:0
+#, python-format
+msgid "Activity view unavailable on this model"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Add"
+msgstr "Додати"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/form_editor.js:0
+#, python-format
+msgid "Add Chatter Widget"
+msgstr "Додати віджет чату"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/form_editor.js:0
+#, python-format
+msgid "Add Picture"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/new_buttonbox_dialog.js:0
+#, python-format
+msgid "Add a Button"
+msgstr "Додайте кнопку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Add a description..."
+msgstr "Додати опис..."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/form_editor.js:0
+#, python-format
+msgid "Add a pipeline status bar"
+msgstr "Додайте рядок стану гістограми конвеєра "
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/kanban_record_editor.js:0
+#, python-format
+msgid "Add a priority"
+msgstr "Додати пріоритет"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Add an approval rule"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/kanban_record_editor.js:0
+#, python-format
+msgid "Add an avatar"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Add in the print menu"
+msgstr "Додати в меню друку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Add new value"
+msgstr "Додати нове значення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Add selection"
+msgstr "Додати вибір"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/kanban_record_editor.js:0
+#, python-format
+msgid "Add tags"
+msgstr "Додати теги"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Additional Fields"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Address Block"
+msgstr "Адресний блок"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Aggregate"
+msgstr "Сукупність"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Alignment"
+msgstr "Вирівнювання"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "All Day"
+msgstr "Весь день"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"All set? You are just one click away from <b>generating your first app</b>."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Allow Link to List View"
+msgstr "Дозволити посилання на перегляд списку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Amount total"
+msgstr "Разом"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Amount untaxed"
+msgstr "Неоподатковувана сума"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+msgid "Approval Entries"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Approval Group"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__rule_id
+msgid "Approval Rule"
+msgstr ""
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_search_view
+msgid "Approval Rules"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Approvals"
+msgstr "Затвердження"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "Approvals can only be done on a method or an action, not both."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Approve"
+msgstr "Затвердити"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__approved
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+msgid "Approved"
+msgstr "Затверджено"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.notify_approval
+msgid "Approved as"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Approved on"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__user_id
+msgid "Approved/rejected by"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Archive deprecated records"
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_form_view
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_search_view
+#, python-format
+msgid "Archived"
+msgstr "Заархівовано"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Archiving"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_manager.js:0
+#, python-format
+msgid "Are you sure you want to remove the selection values?"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_editor_manager.js:0
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Are you sure you want to remove this %s from the view?"
+msgstr "Ви впевнені, що хочете видалити це %s з цього перегляду?"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/menu.js:0
+#, python-format
+msgid "Are you sure you want to reset the background image?"
+msgstr "Ви впевнені, що хочете редагувати фонове зображення?"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid ""
+"Are you sure you want to restore the default view?\r\n"
+"All customization done with Studio on this view will be lost."
+msgstr ""
+"Ви впевнені, що хочете відновити перегляд за замовчуванням?\r\n"
+"Усі налаштування, зроблені за допомогою студії на цьому перегляді, будуть втрачені ."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/action_editor_action.js:0
+#, python-format
+msgid ""
+"Are you sure you want to restore the default view?\r\n"
+"All customization done with studio on this view will be lost."
+msgstr ""
+"Ви впевнені, що хочете відновити перегляд за замовчуванням?\r"
+"Усі налаштування, зроблені за допомогою студії на цьому перегляді, будуть втрачені ."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "As expression"
+msgstr "Як вираз"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Ascending"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Assign a responsible to each record"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Assign dates and visualize records in a calendar"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Attach a picture to a record"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Auto-complete with"
+msgstr "Автозаповнення з"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#, python-format
+msgid "Autocompletion Fields"
+msgstr "Поля автозаповнення"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_base_automation
+msgid "Automated Action"
+msgstr "Автоматизована дія"
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "Automated Actions"
+msgstr "Дія"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Automations"
+msgstr "Автоматизація"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Average"
+msgstr "Середній"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Awaiting approval"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Backward"
+msgstr "Назад"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_base
+msgid "Base"
+msgstr "База"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_kanban_view.js:0
+#, python-format
+msgid "Blank"
+msgstr "Бланк"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks_registry.js:0
+#, python-format
+msgid "Block"
+msgstr "Блокувати"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Blocked"
+msgstr "Заблоковано"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Bold"
+msgstr "Жирний"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Bordered"
+msgstr "З рамкою"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Borderless"
+msgstr "Без рамки"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_kanban_view.js:0
+#, python-format
+msgid "Business header/footer"
+msgstr "Верхній колонтитул/нижній колонтитул компанії "
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_editor_sidebar.js:0
+#, python-format
+msgid "By default: "
+msgstr "За замовчуванням: "
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Calendar View"
+msgstr "Перегляд календаря"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Can Create"
+msgstr "Можна створити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Can Delete"
+msgstr "Можна видалити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Can Edit"
+msgstr "Можна редагувати"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__can_validate
+msgid "Can be approved"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/field_selector_dialog.js:0
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/js/new_model.js:0
+#: code:addons/custom_studio/static/src/js/views/map_view_dialog.js:0
+#: code:addons/custom_studio/static/src/js/views/new_view_dialog.js:0
+#: code:addons/custom_studio/static/src/js/views/view_editors/new_buttonbox_dialog.js:0
+#: code:addons/custom_studio/static/src/xml/studio_home_menu.xml:0
+#: model_terms:ir.ui.view,arch_db:custom_studio.simplified_form_view_import_module
+#, python-format
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Categorize records with custom tags"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Change Background"
+msgstr "Змінити тло"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Change Image"
+msgstr "Змінити зображення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Change the <b>background</b>, make it yours."
+msgstr "Змініть <b>фонове зображення</b>, зробіть його вашим."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Chatter"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Checkbox"
+msgstr "Позначення"
+
+#. module: custom_studio
+#: model:ir.model.fields,help:custom_studio.field_ir_model_data__studio
+msgid "Checked if it has been edited with Studio."
+msgstr "Позначено, якщо було відредаговано зі Студією."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "Choose an app name"
+msgstr "Виберіть назву додатка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "Choose your first object name"
+msgstr "Виберіть назву першого об'єкта"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Churn"
+msgstr "Втрата"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Class"
+msgstr "Клас"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Clear"
+msgstr "Очистити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Click here."
+msgstr "Натисніть тут."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Click to edit messaging features on your model."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Click to see all approval rules."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#: code:addons/custom_studio/static/src/js/menu.js:0
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#: model_terms:ir.ui.view,arch_db:custom_studio.simplified_form_view_import_module
+#, python-format
+msgid "Close"
+msgstr "Закрити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Cohort View"
+msgstr "Перегляд когорти"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Collapse First Level"
+msgstr "Згорнути перший рівень"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Color"
+msgstr "Колір"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Colors"
+msgstr "Кольори"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks_registry.js:0
+#, python-format
+msgid "Column"
+msgstr "Колонка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Column Title"
+msgstr "Заголовок колонки"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Columns"
+msgstr "Стовпці"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Compact"
+msgstr "Компактний"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_res_company
+msgid "Companies"
+msgstr "Компанії"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Company"
+msgstr "Компанія"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Components"
+msgstr "Компоненти"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Conditional"
+msgstr "Умовно"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__conditional
+msgid "Conditional Rule"
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/models/ir_ui_menu.py:0
+#, python-format
+msgid "Configuration"
+msgstr "Налаштування"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/js/new_model.js:0
+#, python-format
+msgid "Configure Model"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/field_selector_dialog.js:0
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/js/views/view_editors/new_buttonbox_dialog.js:0
+#: code:addons/custom_studio/static/src/xml/studio_home_menu.xml:0
+#, python-format
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_view_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Contact Field"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/map_view_dialog.js:0
+#, python-format
+msgid "Contact Field Required"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Contact details"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Context"
+msgstr "Контекст"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"Continue to configure some typical behaviors for your new type of object."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#, python-format
+msgid "Create Menu"
+msgstr "Створити меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/new_model.js:0
+#, python-format
+msgid "Create Model"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#, python-format
+msgid "Create a new Menu"
+msgstr "Створити нове меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/new_model.js:0
+#, python-format
+msgid "Create a new Model"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"Create your <b>selection values</b> (e.g.: Romance, Polar, Fantasy, etc.)"
+msgstr ""
+"Створіть ваші <b>значення вибору</b> (напр.: Романтизм, Полярний, Фентезі, і"
+" т.д..)"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "Create your App"
+msgstr "Створіть ваш додаток"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "Create your app"
+msgstr "Створіть ваш додаток"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "Create your first Menu"
+msgstr "Створіть ваше перше меню"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__create_uid
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__create_uid
+msgid "Created by"
+msgstr "Створив"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__create_date
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__create_date
+msgid "Created on"
+msgstr "Створено на"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/action_editor_action.js:0
+#, python-format
+msgid "Creating this type of view is not currently supported in Studio."
+msgstr "Створення цього типу перегляду наразі не підтримується в Студії."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_menu.py:0
+#, python-format
+msgid "Custom Configuration"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_base_module_uninstall__custom_fields
+msgid "Custom Fields"
+msgstr "Кастомні поля"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_base_module_uninstall__custom_models
+msgid "Custom Models"
+msgstr "Кастомні моделі"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_base_module_uninstall__custom_reports
+msgid "Custom Reports"
+msgstr "Кастомні звіти"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Custom Sorting"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_base_module_uninstall__custom_views
+msgid "Custom Views"
+msgstr "Кастомні перегляди"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Custom color"
+msgstr "Спеціальний колір"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.view_base_module_uninstall_studio
+msgid "Custom fields:"
+msgstr "Кастомні поля:"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.view_base_module_uninstall_studio
+msgid "Custom models:"
+msgstr "Кастомні моделі:"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.view_base_module_uninstall_studio
+msgid "Custom reports:"
+msgstr "Кастомні звіти:"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.view_base_module_uninstall_studio
+msgid "Custom views:"
+msgstr "Кастомні перегляди:"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.view_base_module_uninstall_studio
+msgid "Customization made with Studio will be permanently lost"
+msgstr "Кастомізація, виконана зі Студією, буде назавжди втрачена"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Customizations"
+msgstr "Налаштування"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Data table"
+msgstr "Панель даних"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Date"
+msgstr "Дата"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Date & Calendar"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Date & Time"
+msgstr "Дата та час"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Date range & Gantt"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Day"
+msgstr "День"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Day Precision"
+msgstr "Точність дня"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Decimal"
+msgstr "Десятковий"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Default"
+msgstr "За замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Default Display Mode"
+msgstr "Режим дисплею за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Default Group by"
+msgstr "Згруповано за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Default Scale"
+msgstr "Масштаб за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_manager.js:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Default Values"
+msgstr "Типові значення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Default value"
+msgstr "Значення за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "Default view"
+msgstr "Перегляд за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Define start/end dates and visualize records in a Gantt chart"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Delay Field"
+msgstr "Поле затримки"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#: model_terms:ir.ui.view,arch_db:custom_studio.act_report_xml_view_kanban
+#, python-format
+msgid "Delete"
+msgstr "Видалити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#, python-format
+msgid "Delete Menu Item"
+msgstr "Видалити елемент меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Descending"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/icon_creator.xml:0
+#: code:addons/custom_studio/static/src/xml/icon_creator.xml:0
+#, python-format
+msgid "Design your Icon"
+msgstr "Створіть свою іконку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "Disable"
+msgstr "Відключити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Disable creation"
+msgstr "Вимкнути створення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Disable opening"
+msgstr "Вимкнути відкриття"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Display"
+msgstr "Відобразити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Display Count"
+msgstr "Підрахунок показу"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_base_automation__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_base_module_uninstall__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_act_window__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_act_window_view__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_report__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_server__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_filters__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_http__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_access__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_data__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_fields__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_module_module__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_qweb__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_rule__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_ui_menu__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_ir_ui_view__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_mail_template__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_mail_thread__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_report_paperformat__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_res_company__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_res_groups__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__display_name
+#: model:ir.model.fields,field_description:custom_studio.field_studio_mixin__display_name
+msgid "Display Name"
+msgstr "Відобразити назву"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Display Total row"
+msgstr "Відображати рядок суми"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Display Unavailability"
+msgstr "Відображати недоступність"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Display horizontally"
+msgstr "Відображати горизонтально"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/kanban_record_editor.js:0
+#, python-format
+msgid "Do you want to add a dropdown with colors?"
+msgstr "Ви хочете додати спадне меню з кольорами?"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__domain
+#, python-format
+msgid "Domain"
+msgstr "Домен"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Done"
+msgstr "Виконано"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"Drag & drop <b>another field</b>. Let’s try with a <i>selection field</i>."
+msgstr ""
+"Перетягування <b>іншого поля</b>. Давайте спробуємо з <i>вибраним полем</i>."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#, python-format
+msgid "Drag a menu to the right to create a sub-menu"
+msgstr "Перетягніть меню вправо, щоб створити підменю"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_editor.js:0
+#, python-format
+msgid "Drag building block here"
+msgstr "Перетягніть блок сюди"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Dropdown Menu"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#: model_terms:ir.ui.view,arch_db:custom_studio.act_report_xml_view_kanban
+#, python-format
+msgid "Dropdown menu"
+msgstr "Спадне меню"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.act_report_xml_view_kanban
+msgid "Duplicate"
+msgstr "Дублювати"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Edit"
+msgstr "Редагувати"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_manager.xml:0
+#, python-format
+msgid "Edit Form View"
+msgstr "Редагувати з перегляду"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_manager.xml:0
+#, python-format
+msgid "Edit List View"
+msgstr "Редагувати перегляд списку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#, python-format
+msgid "Edit Menu"
+msgstr "Редагувати меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#, python-format
+msgid "Edit Menu Item"
+msgstr "Редагувати елемент меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#, python-format
+msgid "Edit Value"
+msgstr "Редагувати значення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Edit Values"
+msgstr "Редагувати значення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Edit selection"
+msgstr "Редагувати вибір"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Editable"
+msgstr "Редагований"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Else"
+msgstr "Інше"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Email"
+msgstr "Ел. пошта"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Email Alias"
+msgstr "Псевдонім ел. пошти"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_mail_template
+msgid "Email Templates"
+msgstr "Шаблони електронних листів"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_mail_thread
+msgid "Email Thread"
+msgstr "Тема електронної пошти"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor_sidebar.xml:0
+#, python-format
+msgid "Empty List Message"
+msgstr "Пустий список повідомлень"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Enable Mass Editing"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Enable Routing"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Enable SMS"
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "End Date"
+msgstr "Кінцева дата"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__entry_ids
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_form_view
+msgid "Entries"
+msgstr "Записи"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/abstract_editor_manager.js:0
+#, python-format
+msgid "Error"
+msgstr "Помилка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_editor_manager.js:0
+#, python-format
+msgid "Error when compiling AST"
+msgstr "Помилка під час компіляції AST"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Esc expression"
+msgstr "Вираз Esc"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Existing Fields"
+msgstr "Існуючі поля"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "Existing Model"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Export"
+msgstr "Експорт"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_kanban_view.js:0
+#, python-format
+msgid "External"
+msgstr "Зовнішній"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Fadeout Speed"
+msgstr "Знизити швидкість"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Fast"
+msgstr "Швидко"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#, python-format
+msgid "Favourites"
+msgstr "Закладки"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#: code:addons/custom_studio/static/src/xml/field_selector_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/kanban_editor.xml:0
+#, python-format
+msgid "Field"
+msgstr "Поле"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Field & Label"
+msgstr "Поле та мітка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Field Column"
+msgstr "Колонка поля"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#, python-format
+msgid "Field Properties"
+msgstr "Властивості поля"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Field expression"
+msgstr "Вираз поля"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Field in Cell"
+msgstr "Поле в клітинці"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_model_fields
+msgid "Fields"
+msgstr "Поля"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#: model_terms:ir.ui.view,arch_db:custom_studio.act_report_xml_view_kanban
+#, python-format
+msgid "File"
+msgstr "Файл"
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "Filename for %s"
+msgstr "Назва файлу для %s"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Filter"
+msgstr "Фільтр"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Filter Rules"
+msgstr "Правила фільтрації"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#: model:ir.model,name:custom_studio.model_ir_filters
+#, python-format
+msgid "Filters"
+msgstr "Фільтри"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/form_editor.js:0
+#, python-format
+msgid "First Status"
+msgstr "Перший статус"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Font style"
+msgstr "Стиль шрифту"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Foreach expression"
+msgstr "У кожному виразі"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Form View"
+msgstr "Перегляд форми"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Forward"
+msgstr "Попереду"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Gantt View"
+msgstr "Перегляд діаграми Ґанта"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "General Views"
+msgstr "Загальні перегляди"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/new_view_dialog.js:0
+#, python-format
+msgid "Generate %s View"
+msgstr "Створити %s перегляд"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/map_view_dialog.js:0
+#, python-format
+msgid "Generate Map View"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Get contact, phone and email fields on records"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Go on, you are almost done!"
+msgstr "Продовжуйте, ви майже закінчили!"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Good job! To add more <b>fields</b>, come back to the <i>Add tab</i>."
+msgstr ""
+"Хороша робота! Щоб додати більше <b>полів</b>, поверніться до <i>вкладки "
+"Додати</i>."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Graph View"
+msgstr "Перегляд графіка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Great !"
+msgstr "Чудово !"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#, python-format
+msgid "Grid View"
+msgstr "Перегляд сітки"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__group_id
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__group_id
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_search_view
+msgid "Group"
+msgstr "Група"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_search_view
+#, python-format
+msgid "Group By"
+msgstr "Групувати за"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#, python-format
+msgid "Group by"
+msgstr "Групувати за"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "Groups used in approval rules must have an external identifier."
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_http
+msgid "HTTP Routing"
+msgstr "Маршрутизація HTTP"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Half Day"
+msgstr "Пів дня"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Half Hour"
+msgstr "Пів години"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Heading1"
+msgstr "Заголовок1"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Heading2"
+msgstr "Заголовок2"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Heading3"
+msgstr "Заголовок3"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Heading4"
+msgstr "Заголовок4"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Heading5"
+msgstr "Заголовок5"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Heading6"
+msgstr "Заголовок6"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Help Tooltip"
+msgstr "Виринаюча підказка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"Here, you can <b>name</b> your field (e.g. Book reference, ISBN, Internal "
+"Note, etc.)."
+msgstr ""
+"Тут ви можете <b>назвати</b> ваше поле (наприклад, посилання книги, ISBN, "
+"внутрішня примітка тощо.)."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Hide Address"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Hide Name"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Hide by default"
+msgstr "Сховати за замовчуванням"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "High Priority"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#, python-format
+msgid "Home"
+msgstr "Головна"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_res_company__background_image
+msgid "Home Menu Background Image"
+msgstr "Фонове зображення головного меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Hour"
+msgstr "Година"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "How do you want to <b>name</b> your app? Library, Academy, …?"
+msgstr "Як ви хочете <b>назвати</b> ваш додаток? Бібліотека, Академія, …?"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "How do you want to name your first <b>menu</b>? My books, My courses?"
+msgstr "Як ви хочете назвати ваше перше <b>меню</b>? Мої книги, Мої курси?"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Html"
+msgstr "Html"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"I bet you can <b>build an app</b> in 5 minutes. Ready for the challenge?"
+msgstr ""
+"Ми впевнені, що ви зможете <b>створити додаток</b> за 5 хвилин. Готові до "
+"випробування?"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: model:ir.model.fields,field_description:custom_studio.field_base_automation__id
+#: model:ir.model.fields,field_description:custom_studio.field_base_module_uninstall__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_act_window__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_act_window_view__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_report__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_server__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_filters__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_http__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_access__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_data__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_fields__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_module_module__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_qweb__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_rule__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_ui_menu__id
+#: model:ir.model.fields,field_description:custom_studio.field_ir_ui_view__id
+#: model:ir.model.fields,field_description:custom_studio.field_mail_template__id
+#: model:ir.model.fields,field_description:custom_studio.field_mail_thread__id
+#: model:ir.model.fields,field_description:custom_studio.field_report_paperformat__id
+#: model:ir.model.fields,field_description:custom_studio.field_res_company__id
+#: model:ir.model.fields,field_description:custom_studio.field_res_groups__id
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__id
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__id
+#: model:ir.model.fields,field_description:custom_studio.field_studio_mixin__id
+#, python-format
+msgid "ID"
+msgstr "ID"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_buttonbox_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Icon"
+msgstr "Значок"
+
+#. module: custom_studio
+#: model:ir.model.fields,help:custom_studio.field_studio_approval_rule__domain
+msgid "If set, the rule will only apply on records that match the domain."
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.fields,help:custom_studio.field_studio_approval_rule__exclusive_user
+msgid ""
+"If set, the user who approves this rule will not be able to approve other "
+"rules for the same record"
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid ""
+"If you don't want to create a new model, an existing model should be "
+"selected."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Image"
+msgstr "Зображення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: model_terms:ir.ui.view,arch_db:custom_studio.simplified_form_view_import_module
+#, python-format
+msgid "Import"
+msgstr "Імпорт"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "In Progress"
+msgstr "В процесі"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_manager.js:0
+#, python-format
+msgid ""
+"In order to use a monetary field, you need a currency field on the model. Do"
+" you want to create a currency field first? You can make this field "
+"invisible afterwards."
+msgstr ""
+"Для того, щоб використовувати грошове поле, потрібне поле валюти область на "
+"моделі. Створити перше поле валюти? Після цього ви можете зробити це поле "
+"невидимим."
+
+#. module: custom_studio
+#: model:ir.model.fields,help:custom_studio.field_ir_ui_menu__is_studio_configuration
+msgid ""
+"Indicates that this menu was created by Studio to hold configuration sub-"
+"menus"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks_registry.js:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Inline"
+msgstr "Вбудований"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Integer"
+msgstr "Ціле число"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_kanban_view.js:0
+#, python-format
+msgid "Internal"
+msgstr "Внутрішній"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Interval"
+msgstr "Інтервал"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Invalid studio_approval %s in button"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Invisible"
+msgstr "Прихований"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_base_module_uninstall__is_studio
+msgid "Is Studio"
+msgstr "Це Студія"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "Is default view"
+msgstr "Перегляд за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Italic"
+msgstr "Курсив"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Kanban State"
+msgstr "Стан канбану"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Kanban View"
+msgstr "Перегляд канбану"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_buttonbox_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Label"
+msgstr "Мітка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Large"
+msgstr "Великий"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_base_automation____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_base_module_uninstall____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_act_window____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_act_window_view____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_report____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_actions_server____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_filters____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_http____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_access____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_data____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_fields____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_module_module____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_qweb____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_rule____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_ui_menu____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_ir_ui_view____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_mail_template____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_mail_thread____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_report_paperformat____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_res_company____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_res_groups____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule____last_update
+#: model:ir.model.fields,field_description:custom_studio.field_studio_mixin____last_update
+msgid "Last Modified on"
+msgstr "Останні зміни на"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__write_uid
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновив"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__write_date
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"Let’s check the result. Close Odoo Studio to get an <b>overview of your "
+"app</b>."
+msgstr ""
+"Давайте перевіримо результат. Закрити Студію Odoo, щоб отримати<b>загальний "
+"огляд вашого додатку</b>."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__exclusive_user
+#, python-format
+msgid "Limit approver to this rule"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/sidebar_common.xml:0
+#, python-format
+msgid "Limit visibility to groups"
+msgstr "Обмеження видимості до груп"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#: code:addons/custom_studio/static/src/xml/search_renderer.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "List View"
+msgstr "Перегляд списку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor.xml:0
+#: code:addons/custom_studio/static/src/xml/report_editor.xml:0
+#, python-format
+msgid "Loading..."
+msgstr "Завантаження..."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Manually sort records from the listview"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Many2many"
+msgstr "Many2many"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Many2one"
+msgstr "Many2one"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Map View"
+msgstr "Перегляд карти"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Margins"
+msgstr "Маржі"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Measure Field"
+msgstr "Поле вимірювання"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Medium"
+msgstr "Канал"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_ui_menu
+msgid "Menu"
+msgstr "Меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__message
+#, python-format
+msgid "Message"
+msgstr "Повідомлення"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__method
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__method
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_search_view
+msgid "Method"
+msgstr "Метод"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_kanban_view.js:0
+#, python-format
+msgid "Minimal header/footer"
+msgstr "Мінімальний верхній/нижній колонтитул"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Mode"
+msgstr "Режим"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__model_id
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_search_view
+#, python-format
+msgid "Model"
+msgstr "Модель"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_model_access
+msgid "Model Access"
+msgstr "Доступ до моделі"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_model_data
+msgid "Model Data"
+msgstr "Дані моделі"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__model
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__model_name
+msgid "Model Name"
+msgstr "Назва моделі"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_model
+msgid "Models"
+msgstr "Моделі"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_module_module
+msgid "Module"
+msgstr "Модуль"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_base_module_uninstall
+msgid "Module Uninstall"
+msgstr "Видалення модуля"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.simplified_form_view_import_module
+msgid "Module file (.zip)"
+msgstr "Файл модуля (.zip)"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Monetary"
+msgstr "Грошовий"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Monetary value"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Month"
+msgstr "Місяць"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Month Precision"
+msgstr "Точність місяця"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/sidebar_common.xml:0
+#, python-format
+msgid "More"
+msgstr "Більше"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Multiline Text"
+msgstr "Багаторядковий текст"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "Multiple Records Views"
+msgstr "Перегляди кількох записів"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "My %s"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_buttonbox_dialog.xml:0
+#, python-format
+msgid "My Button"
+msgstr "Моя кнопка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#, python-format
+msgid "My Menu"
+msgstr "Моє меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_model.xml:0
+#, python-format
+msgid "My Model"
+msgstr ""
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+msgid "My entries"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#: code:addons/custom_studio/static/src/xml/new_model.xml:0
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__name
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__name
+#, python-format
+msgid "Name"
+msgstr "Назва"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "New"
+msgstr "Новий"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "New Approval Entry"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/field_selector_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/kanban_editor.xml:0
+#, python-format
+msgid "New Field"
+msgstr "Нове поле"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "New Fields"
+msgstr "Нові поля"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/search_editor.js:0
+#, python-format
+msgid "New Filter"
+msgstr "Новий фільтр"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#, python-format
+msgid "New Menu"
+msgstr "Нове меню"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#: code:addons/custom_studio/static/src/xml/new_model.xml:0
+#, python-format
+msgid "New Model"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "New record at the bottom"
+msgstr "Новий запис внизу"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "New record on top"
+msgstr "Новий запис зверху"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#: code:addons/custom_studio/static/src/xml/model_configurator.xml:0
+#: code:addons/custom_studio/static/src/xml/model_configurator.xml:0
+#, python-format
+msgid "Next"
+msgstr "Наступний"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"Nicely done! Let’s build your screen now; <b>drag</b> a <i>text field</i> "
+"and <b>drop</b> it in your view, on the right."
+msgstr ""
+"Чудово зробили! Створимо ваш екран зараз;<b>візьміть</b>  <i>текстове "
+"поле</i> та <b>перетягніть</b> у ваш перегляд справа."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "No"
+msgstr "Ні"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "No approval found for this rule, record and user combination."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_kanban_view.js:0
+#, python-format
+msgid "No header/footer"
+msgstr "Немає верхнього/нижнього колонтитулу"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_manager.js:0
+#, python-format
+msgid "No related many2one fields found"
+msgstr "Не знайдено пов'язаних полів many2one"
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/report.py:0
+#, python-format
+msgid "No view found for the given report!"
+msgstr "Не знайдено жодного перегляду наданого звіту!"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Normal"
+msgstr "Звичайний"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/static/src/js/menu.js:0
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Notes"
+msgstr "Примітки"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Now you’re on your own. Enjoy your <b>super power</b>."
+msgstr "Тепер ви самостійні. Насолоджуйся своєю <b>супер силою</b>."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Now, customize your icon. Make it yours."
+msgstr "Тепер налаштуйте свою іконку. Зробіть це самостійно."
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_rule__entries_count
+msgid "Number of Entries"
+msgstr "Кількість записів"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "Odoo Studio"
+msgstr "Студія Odoo"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/systray.xml:0
+#, python-format
+msgid "Odoo Studio Icon"
+msgstr "Іконка Студії Odoo"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Offset"
+msgstr "Змістити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "One2many"
+msgstr "One2many"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "Only %s members can approve this rule."
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid ""
+"Only groups with an external ID can be used here. Please choose another "
+"group or assign manually an external ID to this group."
+msgstr ""
+"Тут можна використовувати лише групи із зовнішнім ID. Виберіть іншу групу "
+"або призначте вручну зовнішній ID для цієї групи."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Only members of this group will be able to approve or reject the rule."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Optional"
+msgstr "Необов'язково"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Options"
+msgstr "Опції"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Order"
+msgstr "Замовлення"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.act_report_xml_view_kanban
+msgid "PDF file"
+msgstr "PDF-файл"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_report_paperformat
+msgid "Paper Format Config"
+msgstr "Налаштування паперового формату"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Paper format"
+msgstr "Формат сторінки"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#, python-format
+msgid "Parent Menu"
+msgstr "Попереднє меню"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Partner"
+msgstr "Партнер"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Phone"
+msgstr "Телефон"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Picture"
+msgstr "Зображення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Pipeline stages"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Pivot View"
+msgstr "Перегляд зведеної таблиці"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Placeholder"
+msgstr "Заповнювач"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Placeholder Text"
+msgstr "Текст заповнювача"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Please specify a field name for the selected model."
+msgstr "Будь ласка, вкажіть назву поля для вибраної моделі."
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "Please specify a field."
+msgstr "Будь ласка, визначте поле."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_editor_action.js:0
+#, python-format
+msgid "Preview unavailable because there is no existing record"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#: code:addons/custom_studio/static/src/xml/model_configurator.xml:0
+#: code:addons/custom_studio/static/src/xml/model_configurator.xml:0
+#, python-format
+msgid "Previous"
+msgstr "Попередній"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_manager.xml:0
+#, python-format
+msgid "Print"
+msgstr "Друк"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Printed Report Name"
+msgstr "Назва друкованого звіту"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Priority"
+msgstr "Пріоритет"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid ""
+"Private methods cannot be restricted (since they cannot be called remotely, "
+"this would be useless)."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Properties"
+msgstr "Властивості"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Pull Right"
+msgstr "Зміщення вправо"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Quarter Hour"
+msgstr "Чверть години"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Quick Create"
+msgstr "Швидке створення"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_qweb
+msgid "Qweb"
+msgstr "Qweb"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Rainbow Effect"
+msgstr "Ефект веселки"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Rainbow Man"
+msgstr "Веселка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Read only"
+msgstr "Лише для читання"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Ready"
+msgstr "Підготовлено"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_form_view
+msgid "Record"
+msgstr "Запис"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__res_id
+msgid "Record ID"
+msgstr "ID запису"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Redo"
+msgstr "Повернути дію"
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_studio_approval_entry__reference
+msgid "Reference"
+msgstr "Референс"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Reject"
+msgstr "Відхилити"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+msgid "Rejected"
+msgstr "Відхилено"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.notify_approval
+msgid "Rejected as"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Rejected on"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Related End Date"
+msgstr "Пов'язана кінцева дата"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Related Field"
+msgstr "Пов'язане поле"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Related Start Date"
+msgstr "Пов'язана дата початку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Related expression"
+msgstr "Пов'язаний вираз"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Relation:"
+msgstr "Зв'язок:"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Reload from attachment"
+msgstr "Перезавантажити із вкладення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/sidebar_common.xml:0
+#, python-format
+msgid "Remove from View"
+msgstr "Видалити з перегляду"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Remove rule"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Remove selection"
+msgstr "Видалити вибір"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Report"
+msgstr "Звіт"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_actions_report
+msgid "Report Action"
+msgstr "Дія звіту"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_editor_action.js:0
+#, python-format
+msgid "Report Editor"
+msgstr "Редактор звітів"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "Reporting Views"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Reports"
+msgstr "Звіти"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Required"
+msgstr "Обов'язково"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Reset Default Background"
+msgstr "Скинути фонове зображення за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Reset Image"
+msgstr "Скинути зображення"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Responsible"
+msgstr "Відповідальний"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Restore Default View"
+msgstr "Відновити перегляд за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Restrict a record to a specific company"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Retention"
+msgstr "Утримання"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Revoke"
+msgstr "Скасувати"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_rule
+msgid "Rule"
+msgstr "Правило"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid ""
+"Rules with existing entries cannot be deleted since it would delete existing"
+" approval entries. You should archive the rule instead."
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid ""
+"Rules with existing entries cannot be modified since it would break existing"
+" approval entries. You should archive the rule and create a new one instead."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Save."
+msgstr "Зберегти."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/submenu.js:0
+#, python-format
+msgid "Saved"
+msgstr "Збережено"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/submenu.js:0
+#, python-format
+msgid "Saving"
+msgstr "Збереження"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Search View"
+msgstr "Перегляд пошуку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Search..."
+msgstr "Пошук..."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/form_editor.js:0
+#, python-format
+msgid "Second Status"
+msgstr "Другий статус"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/field_selector_dialog.js:0
+#, python-format
+msgid "Select a Field"
+msgstr "Вибрати поле"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_buttonbox_dialog.xml:0
+#, python-format
+msgid "Select a related field"
+msgstr "Виберіть відповідне поле"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/new_buttonbox_dialog.js:0
+#, python-format
+msgid "Select a related field."
+msgstr "Виберіть відповідне поле."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Select a related field:"
+msgstr "Виберіть відповідне поле:"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_view_dialog.xml:0
+#, python-format
+msgid ""
+"Select the contact field to use to get the coordinates of your records."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Selection"
+msgstr "Вибір"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Send a"
+msgstr "Відправити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Send messages, log notes and schedule activities"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Separator"
+msgstr "Роздільник"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Sequence"
+msgstr "Послідовність"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_ir_actions_server
+msgid "Server Action"
+msgstr "Дія на сервері"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Set Cover Image"
+msgstr "Встановити обкладинку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Set a price or cost on records"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"Set an <b>email alias</b>. Then, try to send an email to this address; it "
+"will create a document automatically for you. Pretty cool, huh?"
+msgstr ""
+"Встановіть <b>псевдонім електронної пошти</b>. Потім спробуйте надіслати "
+"електронний лист на цю адресу; він автоматично створить документ для вас. "
+"Круто, так?"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Set approval rules"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "Set as Default"
+msgstr "Встановити за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Set expression"
+msgstr "Встановити вираз"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Show Invisible Elements"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Show by default"
+msgstr "Показувати за замовчуванням"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Signature"
+msgstr "Підпис"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Size"
+msgstr "Розмір"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Slow"
+msgstr "Повільно"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Small"
+msgstr "Малий"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Sort By"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Sort by"
+msgstr "Сортувати за"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Source"
+msgstr "Джерело"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Specify all possible values"
+msgstr "Вкажіть усі можливі значення"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Stage"
+msgstr "Етап"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#, python-format
+msgid "Stage Name"
+msgstr "Назва етапу"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Stage and visualize records in a custom pipeline"
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Start Date"
+msgstr "Початкова дата"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_view_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Start Date Field"
+msgstr "Поле початкової дати"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_view_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Stop Date Field"
+msgstr "Поле кінцевої дати"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Striped"
+msgstr "Смугастий"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/action_editor_action.js:0
+#: model:ir.model.fields,field_description:custom_studio.field_ir_model_data__studio
+#, python-format
+msgid "Studio"
+msgstr "Студія"
+
+#. module: custom_studio
+#: model:ir.actions.client,name:custom_studio.action_custom_studio_action_editor
+msgid "Studio Action Editor"
+msgstr "Редактор дій студії"
+
+#. module: custom_studio
+#: model:ir.actions.client,name:custom_studio.action_custom_studio_app_creator
+msgid "Studio App Creator"
+msgstr "Творець додатку студії"
+
+#. module: custom_studio
+#: model:ir.actions.act_window,name:custom_studio.studio_approval_entry_action
+#: model:ir.ui.menu,name:custom_studio.menu_studio_approval_entry
+msgid "Studio Approval Entries"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_studio_approval_entry
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_form_view
+msgid "Studio Approval Entry"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_studio_approval_rule
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_rule_form_view
+msgid "Studio Approval Rule"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.actions.act_window,name:custom_studio.studio_approval_rule_action
+msgid "Studio Approvals"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.ui.menu,name:custom_studio.menu_studio_approval_rule
+msgid "Studio Approvals Rules"
+msgstr ""
+
+#. module: custom_studio
+#: model:ir.model.fields,field_description:custom_studio.field_ir_ui_menu__is_studio_configuration
+msgid "Studio Configuration Menu"
+msgstr ""
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_customizations_filter
+msgid "Studio Customizations"
+msgstr "Налаштування студії"
+
+#. module: custom_studio
+#: model:ir.model,name:custom_studio.model_studio_mixin
+msgid "Studio Mixin"
+msgstr "Mixin Студії"
+
+#. module: custom_studio
+#: model:ir.actions.client,name:custom_studio.action_custom_studio_report_editor
+msgid "Studio Report Editor"
+msgstr "Редактор звітів студії"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#: code:addons/custom_studio/static/src/xml/edit_menu.xml:0
+#, python-format
+msgid "Submenu label"
+msgstr "Логотип підменю"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Subtotal & Total"
+msgstr "Підсумок та сума"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/submenu.js:0
+#, python-format
+msgid "Subview "
+msgstr "Підсвічування"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#: code:addons/custom_studio/static/src/xml/model_configurator.xml:0
+#, python-format
+msgid "Suggested features for your new model"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Sum"
+msgstr "Всього"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks_registry.js:0
+#, python-format
+msgid "Table"
+msgstr "Таблиця"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Table style"
+msgstr "Стиль таблиці"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Tabs"
+msgstr "Вкладки"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Tags"
+msgstr "Теги"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Taxes amount by groups"
+msgstr "Сума податків за групою"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Technical Name"
+msgstr "Технічна назва"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Template '%s' not found"
+msgstr "Шаблон '%s' не знайдено"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#: code:addons/custom_studio/static/src/js/views/view_components.js:0
+#, python-format
+msgid "Text"
+msgstr "Текст"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Text decoration"
+msgstr "Оформлення тексту"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Text in Cell"
+msgstr "Текст у клітинці"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "The fastest way to create a web application."
+msgstr "Найшвидший спосіб створити веб-додаток."
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "The field %s does not exist."
+msgstr "Поле %s не існує."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/controllers/form_controller.js:0
+#, python-format
+msgid "The following approvals are missing:"
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "The icon has not a correct format"
+msgstr "Значок не має правильного формату"
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "The icon is not linked to an attachment"
+msgstr "Значок не пов'язаний із прикріпленням"
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/controllers/main.py:0
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "The model %s does not exist."
+msgstr "Модель %s не існує."
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "The model %s doesn't support adding fields."
+msgstr "Модель %s не підтримує додавання полів."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid ""
+"The new name can contain only a to z lower letters, numbers and _, with a "
+"maximum of 53 characters."
+msgstr ""
+"Нова назва може містити лише від літери а до я, цифри та _, максимум 53 "
+"символи."
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "The operation  type \"%s\" is not supported"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "The record field name is missing"
+msgstr "Назва поля запису відсутня"
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "The related field of a button has to be a many2one to %s."
+msgstr "Пов'язане поле кнопки повинно бути many2one до %s."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/abstract_editor_manager.js:0
+#, python-format
+msgid ""
+"The requested change caused an error in the view. It could be because a "
+"field was deleted, but still used somewhere else."
+msgstr ""
+"Запитана зміна викликала помилку у вигляді даних. Це може бути тому, що поле"
+" було видалено, але все ще використовується де-небудь ще."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid ""
+"The user who approves this rule will not be able to approve other rules for "
+"the same record."
+msgstr ""
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid ""
+"There are %s records using selection values not listed in those you are trying to save.\n"
+"Are you sure you want to remove the selection values of those records?"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_manager.xml:0
+#, python-format
+msgid "There are no many2one fields related to the current model."
+msgstr "Немає полів many2one, пов'язаних з поточною моделлю."
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "There is no method %s on the model %s (%s)"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/form_editor.js:0
+#, python-format
+msgid "Third Status"
+msgstr "Третій статус"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/web_client.js:0
+#, python-format
+msgid "This action is not editable by Studio"
+msgstr "Цю дію не можна редагувати в Студії"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid ""
+"This approval or the one you already submitted limits you to a single approval on this action.\n"
+"Another user is required to further approve this action."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/sidebar_common.xml:0
+#, python-format
+msgid ""
+"This field is placed after another element that is only displayed under "
+"certain conditions."
+msgstr ""
+"Це поле розміщується за іншим елементом, який відображається лише за певних "
+"умов."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/abstract_editor_manager.js:0
+#, python-format
+msgid "This operation caused an error, probably because a xpath was broken"
+msgstr "Ця операція викликала помилку, ймовірно, тому що був зламаний xpath"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "This rule has already been approved/rejected."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "This rule limits this user to a single approval for this action."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Three Columns"
+msgstr "Три колонки"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Timeline"
+msgstr "Хронологія"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/action_editor.xml:0
+#, python-format
+msgid "Timeline Views"
+msgstr "Перегляди таймлайну"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Title Block"
+msgstr "Блок заголовка"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "To <b>customize a field</b>, click on its <i>label</i>."
+msgstr "Щоб <b>налаштувати поле</b>, натисніть на цю <i>іконку</i>."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_manager.xml:0
+#, python-format
+msgid ""
+"To create a one2many field on the current model, you must first create its "
+"many2one counterpart on the model you want to relate to."
+msgstr ""
+"Щоби створити поле one2many на поточній моделі, вам спершу необхідно "
+"створити його аналог many2one на моделі, яку ви хочете пов'язати."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/systray.xml:0
+#: code:addons/custom_studio/static/src/xml/systray.xml:0
+#: code:addons/custom_studio/static/src/xml/systray.xml:0
+#, python-format
+msgid "Toggle Studio"
+msgstr "Переключити студію"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Total"
+msgstr "Разом"
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/main.py:0
+#, python-format
+msgid "Translate view"
+msgstr "Перекласти перегляд"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Translations"
+msgstr "Переклади"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "Two Columns"
+msgstr "Дві колонки"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "Type down your notes here..."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Underline"
+msgstr "Підкреслений"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Undo"
+msgstr "Скасувати дію"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editor_sidebar.js:0
+#, python-format
+msgid "Use colors"
+msgstr "Використовувати кольори"
+
+#. module: custom_studio
+#: model_terms:ir.ui.view,arch_db:custom_studio.studio_approval_entry_search_view
+msgid "User"
+msgstr "Користувач"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "User assignment"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "User avatar placeholder"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/models/ir_model.py:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Value"
+msgstr "Значення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#: code:addons/custom_studio/static/src/xml/new_field_dialog.xml:0
+#, python-format
+msgid "Value of list"
+msgstr "Значення списку"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: model:ir.model,name:custom_studio.model_ir_ui_view
+#, python-format
+msgid "View"
+msgstr "Перегляд"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/submenu.js:0
+#: code:addons/custom_studio/static/src/xml/submenu.xml:0
+#, python-format
+msgid "Views"
+msgstr "Представлення"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Visible for"
+msgstr "Видимий для"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Visible if"
+msgstr "Видимий, якщо"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/approval_component.xml:0
+#, python-format
+msgid "Waiting for approval"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Want more fun? Let’s create more <b>views</b>."
+msgstr "Хочете більше фану? Давайте створимо більше <b>переглядів</b>."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "Want to customize the background? Let’s activate <b>Odoo Studio</b>."
+msgstr "Хочете налаштувати фон? Давайте активуємо <b>Студію Odoo</b>."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Week"
+msgstr "Тиждень"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Week Precision"
+msgstr "Точність тижня"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "Welcome to"
+msgstr "Ласкаво просимо до"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid "What about a <b>Kanban view</b>?"
+msgstr "Як щодо <b>перегляду Канбану</b>?"
+
+#. module: custom_studio
+#: model:ir.model.fields,help:custom_studio.field_ir_model__abstract
+msgid "Wheter this model is abstract"
+msgstr "Чи є ця модель абстрактною?"
+
+#. module: custom_studio
+#: model:ir.model.fields,help:custom_studio.field_studio_approval_rule__can_validate
+msgid "Whether the rule can be approved by the current user"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/report_kanban_view.js:0
+#, python-format
+msgid "Which type of report do you want to create?"
+msgstr "Який тип звіту потрібно створити?"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Widget"
+msgstr "Віджет"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "Width"
+msgstr "Ширина"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/web_client.js:0
+#, python-format
+msgid "Wizards are not editable with Studio"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/tours/custom_studio.js:0
+#, python-format
+msgid ""
+"Wow, nice! And I’m sure you can make it even better! Use this icon to open "
+"<b>Odoo Studio</b> and customize any screen."
+msgstr ""
+"Вау, супер! Ми впевнені, що ви зможете зробити це ще краще! Використовуйте "
+"цей значок, щоб відкрити<b>Студію Odoo</b> та відредагувати будь-який екран."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/model_configurator.js:0
+#, python-format
+msgid "Write additional notes or comments"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/sidebar_common.xml:0
+#, python-format
+msgid "XML"
+msgstr "XML"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "Year"
+msgstr "Рік"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid "You can only display a user or a partner"
+msgstr "Можна відображати лише користувача або партнера"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "You cannot cancel an approval you didn't set yourself."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/action_editor_action.js:0
+#, python-format
+msgid "You cannot deactivate this view as it is the last one active."
+msgstr ""
+"Ви не можете деактивувати цей перегляд, оскільки він є останнім активним."
+
+#. module: custom_studio
+#: code:addons/custom_studio/controllers/report.py:0
+#, python-format
+msgid "You cannot modify this view, it is part of the generic layout"
+msgstr "Ви не можете змінити цей перегляд, він є частиною загального макета"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/edit_menu.js:0
+#, python-format
+msgid ""
+"You cannot remove all the menu items of an app.\r\n"
+"Try uninstalling the app instead."
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/kanban_record_editor.js:0
+#, python-format
+msgid "You first need to create a many2many field in the form view."
+msgstr "Вам спочатку потрібно буде створити поле many2many у формі перегляду."
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/views/view_editors/kanban_record_editor.js:0
+#, python-format
+msgid ""
+"You first need to create a many2one field to Partner or User in the form "
+"view."
+msgstr ""
+"Вам спочатку потрібно буде створити поле many2one для Партнера або "
+"Користувача у формі перегляду."
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/studio_approval.py:0
+#, python-format
+msgid "You just like to break things, don't you?"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#, python-format
+msgid "You must select a related field"
+msgstr "Ви повинні вибрати відповідне поле"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/common/new_field_dialog.js:0
+#, python-format
+msgid "You must select a relation"
+msgstr "Ви повинні вибрати зв'язок"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/sidebar_common.xml:0
+#, python-format
+msgid "You need to be part of these groups to see this field:"
+msgstr "Ви повинні бути частиною цих груп, щоб побачити це поле:"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/js/reports/sidebar_components/report_building_blocks.js:0
+#, python-format
+msgid ""
+"You need to use a many2many or one2many field to display a list of items"
+msgstr ""
+"Вам необхідно використовувати поле many2many або one2many, щоби відобразити "
+"список елементів"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "bottom"
+msgstr "знизу"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "day"
+msgstr "день"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "e.g. Properties"
+msgstr "напр., Властивості"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/app_creator.xml:0
+#, python-format
+msgid "e.g. Real Estate"
+msgstr "наприклад, Нерухомість"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "left"
+msgstr "ліворуч"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "month"
+msgstr "місяці"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/icon_creator.xml:0
+#, python-format
+msgid "or"
+msgstr "або"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/home_menu.xml:0
+#, python-format
+msgid "props.style"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "px"
+msgstr "px"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "reset color"
+msgstr "скидання кольору"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "right"
+msgstr "праворуч"
+
+#. module: custom_studio
+#: code:addons/custom_studio/models/ir_ui_view.py:0
+#, python-format
+msgid "studio_approval attribute can only be set in form views"
+msgstr ""
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "test email"
+msgstr "тестова електронна пошта"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/report_editor_sidebar.xml:0
+#, python-format
+msgid "top"
+msgstr "зверху"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/icon_creator.xml:0
+#, python-format
+msgid "upload it"
+msgstr "завантажити це"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/icon_creator.xml:0
+#, python-format
+msgid "upload one"
+msgstr "завантажити"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "week"
+msgstr "тиждень"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "x_studio_"
+msgstr "x_studio_"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#: code:addons/custom_studio/static/src/xml/view_editor_sidebar.xml:0
+#, python-format
+msgid "year"
+msgstr "рік"
+
+#. module: custom_studio
+#. openerp-web
+#: code:addons/custom_studio/static/src/xml/studio_home_menu.xml:0
+#, python-format
+msgid ""
+"{\n"
+"            o_focused: appIndex === app_index,\n"
+"            o_custom_studio_new_app: app.isNewAppButton\n"
+"        }"
+msgstr ""
