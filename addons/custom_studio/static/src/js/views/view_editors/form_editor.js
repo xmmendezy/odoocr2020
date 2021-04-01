@@ -177,7 +177,7 @@ var FormEditor =  FormRenderer.extend(EditorMixin, {
         });
         return $button;
     },
-    
+
     /**
      * @override
      * @private
