@@ -12,10 +12,10 @@
         'base_import_module',
         'mail',
         'web',
-        'web_enterprise',
+        'custo_web_enterprise',
         'web_editor',
-        'web_map',
-        'web_gantt',
+        'custom_web_map',
+        'custom_web_gantt',
         'sms',
     ],
     'data': [

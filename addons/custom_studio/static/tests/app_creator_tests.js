@@ -7,7 +7,7 @@ odoo.define('custom_studio.AppCreator_tests', function (require) {
     const testUtils = require('web.test_utils');
 
     const { Component, tags } = owl;
-    const sampleIconUrl = "/web_enterprise/Parent.src/img/default_icon_app.png";
+    const sampleIconUrl = "/custo_web_enterprise/Parent.src/img/default_icon_app.png";
     const { xml } = tags;
 
     async function createAppCreator({ debug, env, events, rpc, state }) {
@@ -220,7 +220,7 @@ odoo.define('custom_studio.AppCreator_tests', function (require) {
             // options should have been reset
             assert.containsNone(appCreator, 'input[name="use_partner"]:checked',
                 "Options should have been reset by going back then forward")
-            
+
             // check the option again, we want to test it in the RPC
             await testUtils.dom.click(appCreator.el.querySelector('input[name="use_partner"]'));
 

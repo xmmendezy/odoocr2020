@@ -4,7 +4,7 @@ odoo.define('custom_studio.Menu', function (require) {
 var core = require('web.core');
 var Dialog = require('web.Dialog');
 var framework = require('web.framework');
-var Menu = require('web_enterprise.Menu');
+var Menu = require('custo_web_enterprise.Menu');
 var session = require('web.session');
 
 var bus = require('custom_studio.bus');

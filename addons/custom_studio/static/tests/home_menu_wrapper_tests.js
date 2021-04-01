@@ -1,7 +1,7 @@
 odoo.define("custom_studio.home_menu_wrapper_tests", function (require) {
     "use strict";
 
-    const HomeMenuWrapper = require("web_enterprise.HomeMenuWrapper");
+    const HomeMenuWrapper = require("custo_web_enterprise.HomeMenuWrapper");
     const testUtils = require("web.test_utils");
 
     QUnit.module("custom_studio", {}, function () {
@@ -25,11 +25,11 @@ odoo.define("custom_studio.home_menu_wrapper_tests", function (require) {
                 "There shouldn't be a new app icon");
 
             // Check styles applied to home menu
-            homeMenuManager.state.style = 'background-image: url("/web_enterprise/static/src/img/home-menu-bg-overlay.svg");';
+            homeMenuManager.state.style = 'background-image: url("/custo_web_enterprise/static/src/img/home-menu-bg-overlay.svg");';
             await testUtils.nextTick();
 
             assert.strictEqual(homeMenuManager.el.style.backgroundImage,
-                'url("/web_enterprise/static/src/img/home-menu-bg-overlay.svg")',
+                'url("/custo_web_enterprise/static/src/img/home-menu-bg-overlay.svg")',
                 "HomeMenu should display the given background image");
 
             // Check new app pushed
@@ -39,7 +39,7 @@ odoo.define("custom_studio.home_menu_wrapper_tests", function (require) {
                 label: "MyApp",
                 parents: "",
                 webIcon: false,
-                webIconData: "/web_enterprise/static/src/img/default_icon_app.png",
+                webIconData: "/custo_web_enterprise/static/src/img/default_icon_app.png",
                 xmlid: 'my.app',
             });
             await testUtils.nextTick();

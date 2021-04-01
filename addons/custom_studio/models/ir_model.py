@@ -49,6 +49,7 @@ class Base(models.AbstractModel):
         if data:
             data.write({})  # force a write to set the 'studio' and 'noupdate' flags to True
         else:
+            print('Hola')
             module = self.env['ir.module.module'].get_studio_module()
             IrModelData.create({
                 'name': '%s_%s' % (sanitize_for_xmlid(name), uuid.uuid4()),
@@ -84,7 +85,7 @@ class IrModel(models.Model):
     @api.model
     def studio_model_create(self, name, vals=None, options=None):
         """ Allow quick creation of models through Studio.
-        
+
         :param name: functional name of the model (_description attribute)
         :param vals: dict of values that will be included in the create call
         :param options: list of options that can trigger automated behaviours,
@@ -460,7 +461,7 @@ class IrModel(models.Model):
 
     def _get_default_view(self, view_type, view_id=False, create=True):
         """Get the default view for a given model.
-        
+
         By default, create a view if one does not exist.
         """
         self.ensure_one()

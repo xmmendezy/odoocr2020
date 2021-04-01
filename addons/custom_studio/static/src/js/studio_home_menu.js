@@ -1,8 +1,8 @@
 odoo.define("custom_studio.StudioHomeMenu", function (require) {
     "use strict";
 
-    const HomeMenu = require('web_enterprise.HomeMenu');
-    const HomeMenuWrapper = require('web_enterprise.HomeMenuWrapper');
+    const HomeMenu = require('custo_web_enterprise.HomeMenu');
+    const HomeMenuWrapper = require('custo_web_enterprise.HomeMenuWrapper');
     const IconCreator = require('custom_studio.IconCreator');
     const Dialog = require('web.OwlDialog');
 
