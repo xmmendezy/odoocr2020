@@ -43,6 +43,7 @@ docker system prune
 -   [x] Campos extras (Actividad económica, impuestos, Cabys, NIF)
 -   [ ] POS - UI
 -   [ ] Exoneración
+-   [x] Reportes con imagenes de productos y categoria
 
 # l10n_cr
 
