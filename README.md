@@ -1,10 +1,11 @@
-# Uso
+# Odoo CR
+
+## Uso
 
 Primero dar los permisos a los directorios para poder ser copiados por docker:
 
 ```shell
-sudo chmod -R 777 addons
-sudo chmod -R 777 etc
+sudo chmod -R 777 addons etc
 ```
 
 Iniciar el contenedor con el siguiente comando:
@@ -37,6 +38,8 @@ docker system prune
 -   Copiar archivo etc/data.json a /etc/odoo/data.json y dar los permisos de usuario y grupo de odoo
 -   Copiar directorio addons/account_extra al directorio de addons de su distribusión y dar los permisos de usuario y grupo de odoo
 
+# Account GTI
+
 ## Estado del proyecto
 
 -   [x] Proyecto inicial
@@ -45,6 +48,16 @@ docker system prune
 -   [ ] Exoneración
 -   [x] Reportes con imagenes de productos y categoria
 
-# l10n_cr
+# Account CR
 
-## Instalación
+## Estado del proyecto
+
+-   [ ] Proyecto inicial
+
+# Custom Report
+
+## Estado del proyecto
+
+-   [x] Proyecto inicial
+-   [x] Tamaño de imagenes
+-   [x] Columna Marca

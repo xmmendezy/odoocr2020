@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 {
     # Module information
     "name": "Custom Report",

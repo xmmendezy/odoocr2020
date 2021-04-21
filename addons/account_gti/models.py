@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-from ..utils import send_to_gti
+from .utils import send_to_gti
 from json import load
 
 
