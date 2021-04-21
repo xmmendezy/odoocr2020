@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<template id="report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
+		<xpath expr="//div[hasclass('page')]" position="before">
+			<span t-field="doc.partner_shipping_id.email" />
+		</xpath>
 		<xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[1]" position="before">
 			<t>
 				<th style="width:15%;">Image</th>
