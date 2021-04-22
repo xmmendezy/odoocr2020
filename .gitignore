@@ -1,6 +1,6 @@
 .venv
 **/__pycache__/**
 odoo
-l10n_cr_o
 etc/odoo-server.log
-notas.txt
+poetry.lock
+addons_deprecated
