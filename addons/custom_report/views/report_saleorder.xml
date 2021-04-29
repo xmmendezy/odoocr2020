@@ -12,7 +12,7 @@
 		<xpath expr="//table/tbody[hasclass('sale_tbody')]/t[2]/tr/t/td[1]" position="before">
 			<t>
 				<td>
-					<img t-if="line.product_id.image_1920" t-attf-src="data:image/*;base64,{{line.product_id.image_1920}}" style="width:8rem;height:8rem" />
+					<img t-if="line.image_compress()" t-attf-src="data:image/*;base64,{{line.image_compress()}}" style="width:8rem;height:8rem" />
 				</td>
 			</t>
 		</xpath>
