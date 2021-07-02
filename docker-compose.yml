@@ -1,0 +1,37 @@
+version: '3.7'
+
+services:
+    main:
+        container_name: odoo_main
+        build:
+            context: .
+            target: odoobase
+        depends_on:
+            - db
+        ports:
+            - 8069:8069
+        tty: true
+        command: -- --dev=reload
+        volumes:
+            - ./addons:/mnt/addons
+            - ./etc:/etc/odoo
+        restart: always
+        networks:
+            - webnet
+    db:
+        image: postgres:12
+        environment:
+            - POSTGRES_PASSWORD=odoo
+            - POSTGRES_USER=odoo
+            - POSTGRES_DB=postgres
+        restart: always
+        ports:
+            - 8070:5432
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+        networks:
+            - webnet
+networks:
+    webnet:
+volumes:
+    pgdata:

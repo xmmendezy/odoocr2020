@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
+		<xpath expr="//div[hasclass('page')]" position="before">
+			<span t-field="doc.partner_shipping_id.email" />
+		</xpath>
+		<xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[1]" position="before">
+			<t>
+				<th style="width:15%;">Image</th>
+			</t>
+		</xpath>
+		<xpath expr="//table/tbody[hasclass('sale_tbody')]/t[2]/tr/t/td[1]" position="before">
+			<t>
+				<td>
+					<img t-if="line.image_compress()" t-attf-src="data:image/*;base64,{{line.image_compress()}}" style="width:8rem;height:8rem" />
+				</td>
+			</t>
+		</xpath>
+		<xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[2]" position="before">
+			<t>
+				<th style="width:15%;">Marca</th>
+			</t>
+		</xpath>
+		<xpath expr="//table/tbody[hasclass('sale_tbody')]/t[2]/tr/t/td[2]" position="before">
+			<t>
+				<td>
+					<span t-field="line.product_id.categ_id" />
+				</td>
+			</t>
+		</xpath>
+		<xpath expr="//table/tbody[hasclass('sale_tbody')]/t[2]/tr/t/td[2]" position="replace">
+			<t>
+				<td>
+					<span t-field="line.product_uom_qty" />
+				</td>
+			</t>
+		</xpath>
+		<xpath expr="//table[hasclass('o_main_table')]/thead/tr/th[2]" position="after">
+			<t>
+				<th style="width:15%;">Unidad</th>
+			</t>
+		</xpath>
+		<xpath expr="//table/tbody[hasclass('sale_tbody')]/t[2]/tr/t/td[2]" style="position: absolute; right: 0" position="before">
+			<t>
+				<td>
+					<span t-field="line.product_uom" />
+				</td>
+			</t>
+		</xpath>
+	</template>
+</odoo>

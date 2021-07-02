@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<t t-name="web.external_layout_clean">
+    <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+        <div class="o_clean_header">
+            <div class="row">
+                <div class="col-6">
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo" style="max-width: 200px; max-height: 150px;" />
+                </div>
+                <div class="col-5 offset-1" name="company_address">
+                    <ul class="list-unstyled">
+                        <strong>
+                            <li t-if="company.name">
+                                <span t-field="company.name" />
+                            </li>
+                        </strong>
+                        <li t-if="company.vat">
+                            <t t-esc="company.country_id.vat_label or 'Cédula'" />
+                            :
+                            <span t-field="company.vat" />
+                        </li>
+                        <li t-if="company.phone">
+                            Tel:
+                            <span class="o_force_ltr" t-field="company.phone" />
+                        </li>
+                        <li t-if="company.email">
+                            <span t-field="company.email" />
+                        </li>
+                        <li t-if="company.website">
+                            <span t-field="company.website" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div t-attf-class="article o_report_layout_clean o_company_#{company.id}_layout" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+
+        <div class="page" style="font-size: 13px !important;">
+
+            <p>Condiciones de Servicio</p>
+
+            <p>Proforma válida por 30 dias</p>
+
+            <p>Con la confirmación del pedido, el CLIENTE da por aceptadas las siguientes condiciones de servicio:</p>
+
+
+            <p>El Servicio:</p>
+
+            <p>Alto Interior Design es una empresa de servicio de diseño interior y de importación de productos europeos para decoración, según la solicitud de sus clientes. El servicio consiste en ordenar el material elegido y en las cantidades acordadas, coordinar la importación y entregar el material en oficinas de Alto Design Studio en Plaza Florencia. Los plazos de entrega inician a partir de la fecha de consolidación de pedido por cada proveedor</p>
+
+            <p>La orden del material:</p>
+
+            <p>Se basa estrictamente en las medidas y códigos de producto proporcionados por el profesional o persona a cargo del proyecto. Alto Interior Design no se hace responsable por errores en la cantidad de material confirmado por el cliente.</p>
+
+
+            <p>IMPORTANTE: Al momento de recibir su pedido, verifique que el código del producto corresponde al solicitado y confirmado en la proforma final</p>
+
+
+            <p>PAPEL TAPIZ/REVESTIMIENTO MURAL</p>
+
+            <p>
+                Se sugiere adquirir y/o conservar material de reserva para posibles reemplazos, debido a que su producción y tintado varían en cada tiraje
+                <br />
+                Tiempo aproximado de entrega: 15 días
+            </p>
+
+
+            <p>TELAS:</p>
+
+            <p>
+                Sujeto a disponibilidad del código elegido
+                <br />
+                Cantidad mínima de importación: 1 metro
+                <br />
+                Tiempo aproximado de entrega: 20 días a partir de fecha consolidación de la marca
+            </p>
+
+            <p>ALFOMBRAS:</p>
+
+            <p>
+                Se entrega al cliente en oficinas de Alto Design, Plaza Florencia
+                <br />
+                Tiempo aproximado de entrega: 2 meses
+                <br />
+                Su tamaño real puede ser alrededor un 5% distinto al elegido
+            </p>
+
+            <p>El pago del material:</p>
+
+            <p>
+                Todo pedido inferior a US$3.000 debe ser pagado al 100% para confirmar la orden
+                <br />
+                Todo pedido superior a US$3.001 se confirma con un adelanto del 70% y se cancela el 30% restante una vez que se le notifica que el material está en el showroom de Alto Design Studio
+            </p>
+
+            <p>SIN EXCEPCION, SOLAMENTE SE ENTREGAN PEDIDOS QUE ESTAN CANCELADOS AL 100%</p>
+
+            <p>Política de devolución</p>
+
+            <p>
+                    Se aceptan devoluciones únicamente bajo estrictas excepciones y en el tanto que el producto no haya sido retirado del empaque original de fábrica.
+                </p>
+            <p>
+                    La aceptación de devolución de material está sujeta a que el mismo no se haya abierto de su empaque original
+                </p>
+            <p>
+                    El CLIENTE cuenta con 30 días naturales para trámites de devolución a partir de la fecha en que recibe el material.
+                </p>
+
+            <p style="page-break-after:always;"></p>
+        </div>
+
+        <t t-call="web.address_layout" />
+        <t t-raw="0" />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <div class="page" style="font-size: 13px !important;">
+            <div class="table" style="border-bottom: 3px solid black;">
+                <h3>Cuenta Bancaria</h3>
+            </div>
+
+            <p>
+                BAC SAN JOSÉ
+                <br />
+                ALTO INTERIOR DESIGN S.A.
+                <br />
+                IBAN $CR47010200009266231584
+                <br />
+                <a t-attrf-href="info@altodesignstudio.com">info@altodesignstudio.com</a>
+            </p>
+        </div>
+    </div>
+
+    <div t-attf-class="footer o_clean_footer o_company_#{company.id}_layout">
+        <div class="row mt8">
+            <div class="col-3">
+                <span t-field="company.report_footer" />
+            </div>
+            <div class="col-1">
+                <ul t-if="report_type == 'pdf'"></ul>
+            </div>
+        </div>
+    </div>
+</t>

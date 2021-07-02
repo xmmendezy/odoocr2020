@@ -1,0 +1,6 @@
+.venv
+**/__pycache__/**
+odoo
+etc/odoo-server.log
+poetry.lock
+addons_deprecated
